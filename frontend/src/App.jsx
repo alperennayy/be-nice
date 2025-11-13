@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Shops from './pages/Shops'
 import Shop from './pages/Shop'
 import MakeReservation from './pages/MakeReservation'
+import ReservationDetail from './pages/ReservationDetail'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/shop/:shopId' element={<Shop />} />
         <Route path='/shop/:shopId/make-reservation' element={<MakeReservation />} />
+        <Route path='/employee/:employeeId' element={<ReservationDetail />} />
       </Routes>
       <Footer />
     </div>

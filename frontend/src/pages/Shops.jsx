@@ -1,11 +1,10 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { selectShops } from '../redux/slices/shopSlice'
 import ShopItem from '../components/ShopItem'
 
 const Shops = () => {
 
-    const shops = useSelector(selectShops)
+    const shops = useSelector(state => state.shop.shops)
 
     return (
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">

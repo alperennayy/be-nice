@@ -10,7 +10,7 @@ const Navbar = () => {
     const [visible, setVisible] = useState(false)
 
     return (
-        <div className='flex items-center justify-between py-5'>
+        <div className='flex items-center justify-between py-5 '>
             <Link to='/'><h1 className='text-2xl'>BE-NICE</h1></Link>
             <ul className='hidden sm:flex gap-5 text-md text-gray-700'>
                 <NavLink to='/'>

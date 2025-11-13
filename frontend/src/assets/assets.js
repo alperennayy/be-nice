@@ -61,13 +61,55 @@ export const shops = [
     {
         _id: "aaaaa",
         name: "Morocca",
-        description: "Biz bir güzellik merkeziyiz biz bir güzellik merkeziyiz biz bir güzellik merkeziyiz ",
+        description: "Biz bir güzellik merkeziyiz biz bir güzellik merkeziyiz biz bir güzellik merkeziyiz",
         image: [shop_img1_1, shop_img1_2],
         category: "Women",
         location: "Pendik/İstanbul",
         rating: 4.6,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi"],
-
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
+        employees: [
+            {
+                _id: "emp1",
+                name: "Burhan Latif",
+                description: "Ben sizlere en iyi hizmeti verebilmek için buradayım.",
+                image: [emp1_img],
+                service: ["Nail Art", "Manikür & Pedikür", "Saç Kesimi"]
+            },
+            {
+                _id: "emp2",
+                name: "Emre Arslan",
+                description: "Ben sizlere en iyi hizmeti verebilmek için buradayım.",
+                image: [emp2_img],
+                service: ["Nail Art", "Manikür & Pedikür", "Tırnak bakımı ve tırnak protezi"]
+            },
+            {
+                _id: "emp3",
+                name: "Ebru Kınat",
+                description: "Ben sizlere en iyi hizmeti verebilmek için buradayım.",
+                image: [emp3_img],
+                service: ["Nail Art", "Manikür & Pedikür", "Tırnak bakımı ve tırnak protezi"]
+            },
+            {
+                _id: "emp4",
+                name: "Nuray Binicioğlu",
+                description: "Ben sizlere en iyi hizmeti verebilmek için buradayım.",
+                image: [emp4_img],
+                service: ["Nail Art", "Manikür & Pedikür", "Tırnak bakımı ve tırnak protezi"
+                ]
+            },
+            {
+                _id: "emp5",
+                name: "Beyza Koçak",
+                description: "Ben sizlere en iyi hizmeti verebilmek için buradayım.",
+                image: [emp5_img],
+                service: ["Nail Art", "Manikür & Pedikür", "Tırnak bakımı ve tırnak protezi"]
+            }
+        ]
     },
     {
         _id: "aaaab",
@@ -77,7 +119,12 @@ export const shops = [
         category: "Men",
         location: "Kartal/İstanbul",
         rating: 4.3,
-        services: ["Nail Art", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -90,6 +137,12 @@ export const shops = [
                 name: "Emre Arslan",
                 image: [emp2_img],
                 service: ["Nail Art", "Manikür & Pedikür", "Tırnak bakımı ve tırnak protezi"]
+            },
+            {
+                _id: "emp3",
+                name: "Ebru Kınat",
+                image: [emp3_img],
+                service: ["Nail Art", "Manikür & Pedikür", "Tırnak bakımı ve tırnak protezi"]
             }
         ]
     },
@@ -101,7 +154,10 @@ export const shops = [
         category: "Women",
         location: "Maltepe/İstanbul",
         rating: 4.1,
-        services: ["Tırnak bakımı ve tırnak protezi", "Saç Kesimi"],
+        services: [
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -125,7 +181,13 @@ export const shops = [
         category: "Men",
         location: "Kaynarca/İstanbul",
         rating: 4.0,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Saç Kaynak"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 },
+            { name: "Saç Kaynak", price: 100 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -134,7 +196,7 @@ export const shops = [
                 service: ["Nail Art", "Manikür & Pedikür", "Saç Kesimi", "Saç Kaynak"]
             },
             {
-                _id: "emp2",
+                _id: "emp3",
                 name: "Ebru Kınat",
                 image: [emp3_img],
                 service: ["Nail Art", "Manikür & Pedikür", "Tırnak bakımı ve tırnak protezi"]
@@ -149,16 +211,21 @@ export const shops = [
         category: "Women",
         location: "Kurtköy/İstanbul",
         rating: 3.9,
-        services: ["Nail Art", "Manikür & pedikür", "Saç Kesimi"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
-                _id: "emp1",
+                _id: "emp5",
                 name: "Beyza Koçak",
                 image: [emp4_img],
                 service: ["Nail Art", "Manikür & Pedikür"]
             },
             {
-                _id: "emp2",
+                _id: "emp4",
                 name: "Nuray Binicioğlu",
                 image: [emp5_img],
                 service: ["Nail Art", "Manikür & Pedikür", "Tırnak bakımı ve tırnak protezi"]
@@ -173,7 +240,12 @@ export const shops = [
         category: "Men",
         location: "Esenler/İstanbul",
         rating: 4.4,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -197,7 +269,12 @@ export const shops = [
         category: "Women",
         location: "Bağcılar/İstanbul",
         rating: 3.5,
-        services: ["Nail Art", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -221,7 +298,12 @@ export const shops = [
         category: "Men",
         location: "Kadıköy/İstanbul",
         rating: 4.7,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -245,7 +327,12 @@ export const shops = [
         category: "Men",
         location: "Fatih/İstanbul",
         rating: 4.8,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -269,7 +356,12 @@ export const shops = [
         category: "Women",
         location: "Göztepe/İstanbul",
         rating: 4.5,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -293,7 +385,12 @@ export const shops = [
         category: "Men",
         location: "Beykoz/İstanbul",
         rating: 3.4,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -317,7 +414,12 @@ export const shops = [
         category: "Women",
         location: "Çubuk/Ankara",
         rating: 3.1,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -341,7 +443,12 @@ export const shops = [
         category: "Women",
         location: "Pursaklar/Ankara",
         rating: 4.9,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -365,16 +472,21 @@ export const shops = [
         category: "Women",
         location: "Çankaya/Ankara",
         rating: 4.7,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
-                _id: "emp1",
+                _id: "emp3",
                 name: "Ebru Kınat",
                 image: [emp3_img],
                 service: ["Nail Art", "Manikür & Pedikür"]
             },
             {
-                _id: "emp2",
+                _id: "emp4",
                 name: "Nuray Binicioğlu",
                 image: [emp5_img],
                 service: ["Nail Art", "Manikür & Pedikür", "Tırnak bakımı ve tırnak protezi"]
@@ -390,7 +502,12 @@ export const shops = [
         category: "Women",
         location: "Ulus/Ankara",
         rating: 4.2,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -415,7 +532,12 @@ export const shops = [
         category: "Women",
         location: "Kızılay/Ankara",
         rating: 4.4,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -440,7 +562,12 @@ export const shops = [
         category: "Men",
         location: "Kahramankazan/Ankara",
         rating: 4.4,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -465,7 +592,12 @@ export const shops = [
         category: "Men",
         location: "Keçiören/Ankara",
         rating: 3.0,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -490,7 +622,12 @@ export const shops = [
         category: "Men",
         location: "Çayyolu/Ankara",
         rating: 2.0,
-        services: ["Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -515,7 +652,12 @@ export const shops = [
         category: "Men",
         location: "Mengen/Bolu",
         rating: 4.1,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -540,7 +682,12 @@ export const shops = [
         category: "Men",
         location: "Merkez/Bolu",
         rating: 5.0,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -565,7 +712,12 @@ export const shops = [
         category: "Men",
         location: "Mudurnu/Bolu",
         rating: 4.6,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -590,7 +742,12 @@ export const shops = [
         category: "Men",
         location: "Göynük/Bolu",
         rating: 4.4,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -615,7 +772,12 @@ export const shops = [
         category: "Women",
         location: "Gerede/Bolu",
         rating: 4.2,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -640,7 +802,12 @@ export const shops = [
         category: "Women",
         location: "Sapanca/Sakarya",
         rating: 3.9,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -665,7 +832,12 @@ export const shops = [
         category: "Women",
         location: "Mudanya/Bursa",
         rating: 4.8,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -690,7 +862,12 @@ export const shops = [
         category: "Men",
         location: "Ayvalık/Balıkesir",
         rating: 4.4,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -715,7 +892,12 @@ export const shops = [
         category: "Women",
         location: "Bandırma/Balıkesir",
         rating: 4.4,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -739,7 +921,12 @@ export const shops = [
         category: "Men",
         location: "Çınarcık/Yalova",
         rating: 4.3,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -764,7 +951,12 @@ export const shops = [
         category: "Men",
         location: "Bahçelievler/Ankara",
         rating: 3.6,
-        services: ["Nail Art", "Manikür & pedikür", "Tırnak bakımı ve tırnak protezi", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
@@ -789,7 +981,12 @@ export const shops = [
         category: "Men",
         location: "Gölbaşı/Ankara",
         rating: 3.7,
-        services: ["Nail Art", "Manikür & pedikür", "Saç Kesimi", "Kirpik lifting"],
+        services: [
+            { name: "Nail Art", price: 300 },
+            { name: "Manikür & Pedikür", price: 250 },
+            { name: "Tırnak bakımı ve tırnak protezi", price: 400 },
+            { name: "Saç Kesimi", price: 200 }
+        ],
         employees: [
             {
                 _id: "emp1",
